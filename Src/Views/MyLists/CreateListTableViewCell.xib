@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CreateListTableViewCell" id="VaU-Ux-N5a" customClass="CreateListTableViewCell" customModule="Shopping_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VaU-Ux-N5a" id="lBX-Vt-A2p">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pR-va-Vlg" customClass="BaseButton" customModule="Shopping_List" customModuleProvider="target">
+                        <rect key="frame" x="50" y="16" width="275" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="NXl-pj-wHb"/>
+                        </constraints>
+                        <state key="normal" title="Nouvelle liste"/>
+                        <connections>
+                            <action selector="buttonCreateDidTouch:" destination="VaU-Ux-N5a" eventType="touchUpInside" id="thw-ga-h7K"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6pR-va-Vlg" secondAttribute="trailing" constant="50" id="8Aj-qa-cdN"/>
+                    <constraint firstItem="6pR-va-Vlg" firstAttribute="leading" secondItem="lBX-Vt-A2p" secondAttribute="leading" constant="50" id="AZO-jE-L62"/>
+                    <constraint firstItem="6pR-va-Vlg" firstAttribute="top" secondItem="lBX-Vt-A2p" secondAttribute="top" constant="16" id="HTh-zw-Ry5"/>
+                    <constraint firstAttribute="bottom" secondItem="6pR-va-Vlg" secondAttribute="bottom" priority="750" constant="16" id="gdW-Fz-SnH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-65.5" y="-63"/>
+        </tableViewCell>
+    </objects>
+</document>

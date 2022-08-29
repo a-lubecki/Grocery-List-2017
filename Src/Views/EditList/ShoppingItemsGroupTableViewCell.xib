@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShoppingItemsGroupTableViewCell" rowHeight="147" id="KGk-i7-Jjw" customClass="ShoppingItemsGroupTableViewCell" customModule="Shopping_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="146.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RXo-j5-mZF" customClass="BaseCellBackground" customModule="Shopping_List" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="358" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KJm-Gv-gvp">
+                                <rect key="frame" x="8" y="16" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cTV-DX-2zE"/>
+                                    <constraint firstAttribute="width" constant="60" id="kjy-zt-lNf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sAx-xg-bXK" customClass="BaseLabel" customModule="Shopping_List" customModuleProvider="target">
+                                <rect key="frame" x="84" y="16" width="162" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isThemeDark" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="200" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAw-HT-iLX" customClass="BaseLabel" customModule="Shopping_List" customModuleProvider="target">
+                                <rect key="frame" x="84" y="45" width="162" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isThemeDark" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iA1-dO-hlf">
+                                <rect key="frame" x="262" y="16" width="88" height="88"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDK-X3-Rdd" customClass="BaseCellBackground" customModule="Shopping_List" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQy-kO-XCu" customClass="BaseLabel" customModule="Shopping_List" customModuleProvider="target">
+                                                <rect key="frame" x="25.5" y="8" width="37" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isThemeDark" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="ZQy-kO-XCu" firstAttribute="centerY" secondItem="LDK-X3-Rdd" secondAttribute="centerY" id="Lct-Yi-HUH"/>
+                                            <constraint firstAttribute="height" constant="40" id="RRr-b9-QGX"/>
+                                            <constraint firstItem="ZQy-kO-XCu" firstAttribute="centerX" secondItem="LDK-X3-Rdd" secondAttribute="centerX" id="YfP-Bv-dmt"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isActive" value="NO"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtR-8k-tng" customClass="BaseButton" customModule="Shopping_List" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="48" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="FtO-iS-8Cw"/>
+                                            <constraint firstAttribute="height" constant="40" id="wZi-bX-093"/>
+                                        </constraints>
+                                        <state key="normal" image="Button-Less"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isNeutral" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonLessDidTouch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="U7X-FW-Hpg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSW-7g-4YC" customClass="BaseButton" customModule="Shopping_List" customModuleProvider="target">
+                                        <rect key="frame" x="48" y="48" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="7Ox-ye-xcK"/>
+                                            <constraint firstAttribute="height" constant="40" id="y73-PD-LcM"/>
+                                        </constraints>
+                                        <state key="normal" image="Button-More"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isNeutral" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonMoreDidTouch:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="7d1-LG-zzR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qtR-8k-tng" firstAttribute="top" secondItem="LDK-X3-Rdd" secondAttribute="bottom" constant="8" id="C4Q-Gb-3KE"/>
+                                    <constraint firstAttribute="bottom" secondItem="CSW-7g-4YC" secondAttribute="bottom" id="Cm6-Ks-22N"/>
+                                    <constraint firstItem="LDK-X3-Rdd" firstAttribute="leading" secondItem="iA1-dO-hlf" secondAttribute="leading" id="DHB-5f-0zM"/>
+                                    <constraint firstAttribute="bottom" secondItem="qtR-8k-tng" secondAttribute="bottom" id="G9L-y9-991"/>
+                                    <constraint firstItem="qtR-8k-tng" firstAttribute="leading" secondItem="iA1-dO-hlf" secondAttribute="leading" id="aHK-nz-7Me"/>
+                                    <constraint firstAttribute="trailing" secondItem="LDK-X3-Rdd" secondAttribute="trailing" id="jXH-lc-7DW"/>
+                                    <constraint firstItem="LDK-X3-Rdd" firstAttribute="top" secondItem="iA1-dO-hlf" secondAttribute="top" id="lSa-9V-mXJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="CSW-7g-4YC" secondAttribute="trailing" id="tIy-lM-tYh"/>
+                                    <constraint firstItem="CSW-7g-4YC" firstAttribute="leading" secondItem="qtR-8k-tng" secondAttribute="trailing" constant="8" id="vj1-2i-WUQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iA1-dO-hlf" secondAttribute="trailing" constant="8" id="4Ao-VM-MzZ"/>
+                            <constraint firstAttribute="bottom" secondItem="KJm-Gv-gvp" secondAttribute="bottom" priority="750" constant="16" id="6sp-tT-Xzs"/>
+                            <constraint firstItem="FAw-HT-iLX" firstAttribute="top" secondItem="sAx-xg-bXK" secondAttribute="bottom" constant="8" id="8TE-AK-ivD"/>
+                            <constraint firstItem="FAw-HT-iLX" firstAttribute="leading" secondItem="sAx-xg-bXK" secondAttribute="leading" id="AdY-ag-5iu"/>
+                            <constraint firstItem="sAx-xg-bXK" firstAttribute="top" secondItem="RXo-j5-mZF" secondAttribute="top" constant="16" id="EKd-td-YT5"/>
+                            <constraint firstItem="KJm-Gv-gvp" firstAttribute="leading" secondItem="RXo-j5-mZF" secondAttribute="leading" constant="8" id="Hda-9d-aIV"/>
+                            <constraint firstAttribute="bottom" secondItem="iA1-dO-hlf" secondAttribute="bottom" priority="1" constant="16" id="Ksi-8j-r7Y"/>
+                            <constraint firstItem="iA1-dO-hlf" firstAttribute="top" secondItem="RXo-j5-mZF" secondAttribute="top" constant="16" id="L61-gO-i17"/>
+                            <constraint firstItem="sAx-xg-bXK" firstAttribute="leading" secondItem="KJm-Gv-gvp" secondAttribute="trailing" constant="16" id="XYH-9E-IOd"/>
+                            <constraint firstItem="iA1-dO-hlf" firstAttribute="leading" secondItem="FAw-HT-iLX" secondAttribute="trailing" constant="16" id="bnv-Mt-iXH"/>
+                            <constraint firstItem="iA1-dO-hlf" firstAttribute="leading" secondItem="sAx-xg-bXK" secondAttribute="trailing" constant="16" id="gfE-Wc-GCU"/>
+                            <constraint firstItem="KJm-Gv-gvp" firstAttribute="top" secondItem="RXo-j5-mZF" secondAttribute="top" constant="16" id="pF0-9w-KvK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isActive" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="RXo-j5-mZF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="9ia-T7-ofe"/>
+                    <constraint firstAttribute="trailing" secondItem="RXo-j5-mZF" secondAttribute="trailing" constant="8" id="gJ8-yn-mNW"/>
+                    <constraint firstItem="RXo-j5-mZF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="rUV-zi-GbR"/>
+                    <constraint firstAttribute="bottom" secondItem="RXo-j5-mZF" secondAttribute="bottom" priority="750" constant="8" id="rfp-gC-F52"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageIllustration" destination="KJm-Gv-gvp" id="MNu-NV-cnc"/>
+                <outlet property="labelDescription" destination="FAw-HT-iLX" id="oHh-RC-69E"/>
+                <outlet property="labelQuantity" destination="ZQy-kO-XCu" id="eiS-QG-UBa"/>
+                <outlet property="labelTitle" destination="sAx-xg-bXK" id="y5f-RR-RUA"/>
+                <outlet property="viewQuantityContainer" destination="iA1-dO-hlf" id="kv2-Dc-BRV"/>
+                <outlet property="viewQuantityContainerBottomConstraint" destination="Ksi-8j-r7Y" id="0NU-Po-f6c"/>
+            </connections>
+            <point key="canvasLocation" x="-124" y="-143.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Button-Less" width="24" height="24"/>
+        <image name="Button-More" width="24" height="24"/>
+    </resources>
+</document>

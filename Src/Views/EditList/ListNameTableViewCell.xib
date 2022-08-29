@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListNameTableViewCell" rowHeight="148" id="KVV-XS-Kza" customClass="ListNameTableViewCell" customModule="Shopping_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="405" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KVV-XS-Kza" id="dbQ-jd-xtL">
+                <rect key="frame" x="0.0" y="0.0" width="405" height="147.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbq-96-q2Y" customClass="BaseButton" customModule="Shopping_List" customModuleProvider="target">
+                        <rect key="frame" x="339" y="16.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="E9U-Wq-eDK"/>
+                            <constraint firstAttribute="height" constant="50" id="J5U-ZB-N2c"/>
+                        </constraints>
+                        <state key="normal" image="Button-Edit"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isNeutral" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="buttonEditDidTouch:" destination="KVV-XS-Kza" eventType="touchUpInside" id="0Za-lo-IZc"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="200" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="List name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ijd-QM-xoC" customClass="BaseTextField" customModule="Shopping_List" customModuleProvider="target">
+                        <rect key="frame" x="16" y="19.5" width="307" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="nVm-Ci-q1a"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isThemeDark" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outlet property="delegate" destination="KVV-XS-Kza" id="FMZ-tJ-X7p"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zbq-96-q2Y" firstAttribute="centerY" secondItem="Ijd-QM-xoC" secondAttribute="centerY" id="3TB-Ib-enG"/>
+                    <constraint firstAttribute="trailing" secondItem="Zbq-96-q2Y" secondAttribute="trailing" constant="16" id="ECY-j4-0Mi"/>
+                    <constraint firstItem="Zbq-96-q2Y" firstAttribute="centerY" secondItem="dbQ-jd-xtL" secondAttribute="centerY" id="ECz-KC-vlz"/>
+                    <constraint firstAttribute="bottom" secondItem="Zbq-96-q2Y" secondAttribute="bottom" priority="750" constant="16" id="ILS-m7-iOk"/>
+                    <constraint firstItem="Zbq-96-q2Y" firstAttribute="top" secondItem="dbQ-jd-xtL" secondAttribute="top" constant="16" id="XUO-XI-a6T"/>
+                    <constraint firstItem="Zbq-96-q2Y" firstAttribute="leading" secondItem="Ijd-QM-xoC" secondAttribute="trailing" constant="16" id="eXC-c0-GAS"/>
+                    <constraint firstItem="Zbq-96-q2Y" firstAttribute="centerY" secondItem="Ijd-QM-xoC" secondAttribute="centerY" id="qzb-Rn-LVk"/>
+                    <constraint firstItem="Ijd-QM-xoC" firstAttribute="leading" secondItem="dbQ-jd-xtL" secondAttribute="leading" constant="16" id="zgi-dG-O2y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="buttonEdit" destination="Zbq-96-q2Y" id="GM3-Ky-F57"/>
+                <outlet property="textFieldTitle" destination="Ijd-QM-xoC" id="AQt-0v-7SB"/>
+            </connections>
+            <point key="canvasLocation" x="68.5" y="35"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Button-Edit" width="24" height="24"/>
+    </resources>
+</document>

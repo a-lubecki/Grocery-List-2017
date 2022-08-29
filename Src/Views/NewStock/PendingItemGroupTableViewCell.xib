@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PendingItemGroupTableViewCell" rowHeight="292" id="z0W-MV-Acu" customClass="PendingItemGroupTableViewCell" customModule="Shopping_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="292"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z0W-MV-Acu" id="Dck-gP-OCT">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="291.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTR-Fm-Ftc" customClass="BaseCellBackground" customModule="Shopping_List" customModuleProvider="target">
+                        <rect key="frame" x="8" y="4" width="411" height="283.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g9s-JG-JC4">
+                                <rect key="frame" x="8" y="16" width="60" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="BgO-kj-GVF"/>
+                                    <constraint firstAttribute="width" constant="60" id="Jq7-bL-uUw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ove-jy-OPT" customClass="BaseLabel" customModule="Shopping_List" customModuleProvider="target">
+                                <rect key="frame" x="84" y="16" width="223" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isThemeDark" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="200" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-XQ-BtX" customClass="BaseLabel" customModule="Shopping_List" customModuleProvider="target">
+                                <rect key="frame" x="84" y="44" width="223" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isThemeDark" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0O-gJ-H3x" customClass="BaseLabel" customModule="Shopping_List" customModuleProvider="target">
+                                <rect key="frame" x="187" y="84" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isThemeDark" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqv-FS-o9o" customClass="BaseButton" customModule="Shopping_List" customModuleProvider="target">
+                                <rect key="frame" x="50" y="110" width="311" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IoL-k8-IyX"/>
+                                </constraints>
+                                <state key="normal" title="Définir la date de péremption"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isNeutral" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isPositive" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonAddDateDidTouch:" destination="z0W-MV-Acu" eventType="touchUpInside" id="9vz-Hb-W09"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5T-WM-UMW">
+                                <rect key="frame" x="42" y="92" width="327" height="1"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Km7-vV-hrP"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gP9-M4-QPe" customClass="BaseLabel" customModule="Shopping_List" customModuleProvider="target">
+                                <rect key="frame" x="8" y="109" width="68" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isThemeDark" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3h-Ag-TBQ">
+                                <rect key="frame" x="80" y="101" width="323" height="100"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="z0W-MV-Acu" id="ndg-Wc-1zm"/>
+                                    <outlet property="delegate" destination="z0W-MV-Acu" id="hZy-eI-O36"/>
+                                </connections>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="YLt-MY-pWi">
+                                <rect key="frame" x="80" y="101" width="323" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9qB-I2-OcW"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="530013983.598333">
+                                    <!--2017-10-18 10:06:23 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="datePickerValueChanged:" destination="z0W-MV-Acu" eventType="valueChanged" id="6D2-i4-WAk"/>
+                                </connections>
+                            </datePicker>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXU-n0-214">
+                                <rect key="frame" x="80" y="133" width="323" height="1"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="s8o-2W-UVh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F1R-4m-FkX">
+                                <rect key="frame" x="80" y="168" width="323" height="1"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Bbb-Ng-rfz"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWM-VI-zDk" customClass="BaseButton" customModule="Shopping_List" customModuleProvider="target">
+                                <rect key="frame" x="16" y="133" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kQc-r8-zqI"/>
+                                    <constraint firstAttribute="width" constant="50" id="vB8-rC-kDd"/>
+                                </constraints>
+                                <state key="normal" image="Button-Calendar"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isNeutral" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonSwapDidTouch:" destination="z0W-MV-Acu" eventType="touchUpInside" id="y5S-ZD-w49"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZq-Ye-yRo" customClass="BaseButton" customModule="Shopping_List" customModuleProvider="target">
+                                <rect key="frame" x="323" y="21" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="EYe-9f-1ey"/>
+                                    <constraint firstAttribute="height" constant="50" id="sVC-KD-SR2"/>
+                                </constraints>
+                                <state key="normal" title="Séparer"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isNeutral" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonSplitDidTouch:" destination="z0W-MV-Acu" eventType="touchUpInside" id="3MB-ms-aXQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gP9-M4-QPe" firstAttribute="leading" secondItem="wTR-Fm-Ftc" secondAttribute="leading" constant="8" id="0tQ-VY-yPf"/>
+                            <constraint firstAttribute="trailing" secondItem="Z5T-WM-UMW" secondAttribute="trailing" constant="42" id="1hh-GZ-IzD"/>
+                            <constraint firstItem="YLt-MY-pWi" firstAttribute="leading" secondItem="w3h-Ag-TBQ" secondAttribute="leading" id="34H-iS-5S4"/>
+                            <constraint firstItem="YLt-MY-pWi" firstAttribute="top" secondItem="w3h-Ag-TBQ" secondAttribute="top" id="3sd-sK-7fL"/>
+                            <constraint firstItem="zWM-VI-zDk" firstAttribute="top" secondItem="gP9-M4-QPe" secondAttribute="bottom" constant="8" id="5LZ-oU-iRa"/>
+                            <constraint firstItem="gP9-M4-QPe" firstAttribute="top" secondItem="Z5T-WM-UMW" secondAttribute="bottom" constant="16" id="877-Rq-pEO"/>
+                            <constraint firstItem="dZq-Ye-yRo" firstAttribute="leading" secondItem="ove-jy-OPT" secondAttribute="trailing" constant="16" id="8aM-LC-3dQ"/>
+                            <constraint firstItem="zqh-XQ-BtX" firstAttribute="leading" secondItem="ove-jy-OPT" secondAttribute="leading" id="AuB-YC-Twf"/>
+                            <constraint firstItem="YLt-MY-pWi" firstAttribute="leading" secondItem="wTR-Fm-Ftc" secondAttribute="leading" constant="80" id="Cj4-Bb-cIJ"/>
+                            <constraint firstItem="YLt-MY-pWi" firstAttribute="bottom" secondItem="w3h-Ag-TBQ" secondAttribute="bottom" id="HIz-XU-45w"/>
+                            <constraint firstItem="g9s-JG-JC4" firstAttribute="leading" secondItem="wTR-Fm-Ftc" secondAttribute="leading" constant="8" id="JDL-tf-fsd"/>
+                            <constraint firstItem="g9s-JG-JC4" firstAttribute="top" secondItem="wTR-Fm-Ftc" secondAttribute="top" constant="16" id="KDH-gl-6b2"/>
+                            <constraint firstAttribute="trailing" secondItem="dZq-Ye-yRo" secondAttribute="trailing" constant="8" id="LM1-Tq-w2a"/>
+                            <constraint firstItem="Z5T-WM-UMW" firstAttribute="leading" secondItem="wTR-Fm-Ftc" secondAttribute="leading" constant="42" id="LOQ-Nk-LcE"/>
+                            <constraint firstAttribute="bottom" secondItem="YLt-MY-pWi" secondAttribute="bottom" priority="500" constant="8" id="LjM-dt-CaR"/>
+                            <constraint firstItem="W0O-gJ-H3x" firstAttribute="top" secondItem="g9s-JG-JC4" secondAttribute="bottom" constant="8" id="PIi-Oh-cRI"/>
+                            <constraint firstItem="ove-jy-OPT" firstAttribute="leading" secondItem="g9s-JG-JC4" secondAttribute="trailing" constant="16" id="Ri7-4A-6qt"/>
+                            <constraint firstItem="zWM-VI-zDk" firstAttribute="leading" secondItem="wTR-Fm-Ftc" secondAttribute="leading" constant="16" id="S98-RD-hJM"/>
+                            <constraint firstItem="dZq-Ye-yRo" firstAttribute="leading" secondItem="zqh-XQ-BtX" secondAttribute="trailing" constant="16" id="Tk0-tB-geA"/>
+                            <constraint firstItem="bXU-n0-214" firstAttribute="leading" secondItem="YLt-MY-pWi" secondAttribute="leading" id="UKa-Sw-uL1"/>
+                            <constraint firstItem="F1R-4m-FkX" firstAttribute="trailing" secondItem="YLt-MY-pWi" secondAttribute="trailing" id="VcI-pX-EC1"/>
+                            <constraint firstItem="bXU-n0-214" firstAttribute="top" secondItem="YLt-MY-pWi" secondAttribute="top" constant="32" id="ZAM-Gr-UuH"/>
+                            <constraint firstItem="zqh-XQ-BtX" firstAttribute="top" secondItem="ove-jy-OPT" secondAttribute="bottom" constant="8" id="ZE5-SS-BP3"/>
+                            <constraint firstItem="mqv-FS-o9o" firstAttribute="leading" secondItem="wTR-Fm-Ftc" secondAttribute="leading" constant="50" id="ZK7-2G-Oet"/>
+                            <constraint firstItem="mqv-FS-o9o" firstAttribute="top" secondItem="W0O-gJ-H3x" secondAttribute="bottom" constant="8" id="ZeJ-Cj-HYD"/>
+                            <constraint firstItem="YLt-MY-pWi" firstAttribute="top" secondItem="Z5T-WM-UMW" secondAttribute="bottom" constant="8" id="e49-ZE-psT"/>
+                            <constraint firstItem="W0O-gJ-H3x" firstAttribute="centerX" secondItem="wTR-Fm-Ftc" secondAttribute="centerX" id="ecX-AH-23R"/>
+                            <constraint firstItem="YLt-MY-pWi" firstAttribute="bottom" secondItem="F1R-4m-FkX" secondAttribute="bottom" constant="32" id="fbj-an-cQ3"/>
+                            <constraint firstAttribute="trailing" secondItem="mqv-FS-o9o" secondAttribute="trailing" constant="50" id="hOK-Tk-UTu"/>
+                            <constraint firstItem="bXU-n0-214" firstAttribute="trailing" secondItem="YLt-MY-pWi" secondAttribute="trailing" id="i8N-u8-P1o"/>
+                            <constraint firstItem="F1R-4m-FkX" firstAttribute="leading" secondItem="YLt-MY-pWi" secondAttribute="leading" id="lPY-Gy-mtc"/>
+                            <constraint firstItem="ove-jy-OPT" firstAttribute="top" secondItem="wTR-Fm-Ftc" secondAttribute="top" constant="16" id="lnf-MP-8nt"/>
+                            <constraint firstAttribute="trailing" secondItem="YLt-MY-pWi" secondAttribute="trailing" constant="8" id="n1Q-D2-lZs"/>
+                            <constraint firstAttribute="bottom" secondItem="mqv-FS-o9o" secondAttribute="bottom" priority="1" constant="16" id="o38-Dh-9Of"/>
+                            <constraint firstItem="Z5T-WM-UMW" firstAttribute="top" secondItem="g9s-JG-JC4" secondAttribute="bottom" constant="16" id="qRQ-sr-eeK"/>
+                            <constraint firstItem="YLt-MY-pWi" firstAttribute="trailing" secondItem="w3h-Ag-TBQ" secondAttribute="trailing" id="ub7-ij-AZs"/>
+                            <constraint firstItem="dZq-Ye-yRo" firstAttribute="centerY" secondItem="g9s-JG-JC4" secondAttribute="centerY" id="vja-Il-qAp"/>
+                            <constraint firstItem="Z5T-WM-UMW" firstAttribute="centerX" secondItem="wTR-Fm-Ftc" secondAttribute="centerX" id="zJf-v6-cud"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isActive" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wTR-Fm-Ftc" secondAttribute="bottom" priority="250" constant="4" id="8Ii-an-1C1"/>
+                    <constraint firstAttribute="trailing" secondItem="wTR-Fm-Ftc" secondAttribute="trailing" constant="8" id="AFg-XO-Ts0"/>
+                    <constraint firstItem="wTR-Fm-Ftc" firstAttribute="leading" secondItem="Dck-gP-OCT" secondAttribute="leading" constant="8" id="K3p-K8-DpG"/>
+                    <constraint firstItem="wTR-Fm-Ftc" firstAttribute="top" secondItem="Dck-gP-OCT" secondAttribute="top" constant="4" id="ou9-Ps-lyE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="buttonEdit" destination="mqv-FS-o9o" id="BxV-Dh-FCZ"/>
+                <outlet property="buttonEditBottomConstraint" destination="o38-Dh-9Of" id="Zxc-OO-1sn"/>
+                <outlet property="buttonSplit" destination="dZq-Ye-yRo" id="yh8-Q3-KwG"/>
+                <outlet property="buttonSwap" destination="zWM-VI-zDk" id="Vls-5r-GJA"/>
+                <outlet property="datePicker" destination="YLt-MY-pWi" id="Tgj-wi-Lyl"/>
+                <outlet property="imageIllustration" destination="g9s-JG-JC4" id="Pum-HD-CTl"/>
+                <outlet property="labelChosenDate" destination="W0O-gJ-H3x" id="j9u-Yb-sFt"/>
+                <outlet property="labelDescription" destination="zqh-XQ-BtX" id="sFK-xU-Hc4"/>
+                <outlet property="labelExpire" destination="gP9-M4-QPe" id="UYW-r3-KiG"/>
+                <outlet property="labelTitle" destination="ove-jy-OPT" id="FUz-NO-aj3"/>
+                <outlet property="pickerPeriod" destination="w3h-Ag-TBQ" id="UKW-TP-RwQ"/>
+                <outlet property="pickerSeparator1" destination="bXU-n0-214" id="WsH-Zi-5iw"/>
+                <outlet property="pickerSeparator2" destination="F1R-4m-FkX" id="sFG-B6-d2X"/>
+                <outlet property="viewContainer" destination="wTR-Fm-Ftc" id="Fiv-p9-LDE"/>
+                <outlet property="viewSeparator" destination="Z5T-WM-UMW" id="Crv-vh-p6B"/>
+            </connections>
+            <point key="canvasLocation" x="93.5" y="1"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Button-Calendar" width="24" height="24"/>
+    </resources>
+</document>

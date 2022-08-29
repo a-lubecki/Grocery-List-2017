@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="114" id="MDO-yB-d4M" customClass="CategoryTableViewCell" customModule="Shopping_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="287" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MDO-yB-d4M" id="gwz-CT-cxq">
+                <rect key="frame" x="0.0" y="0.0" width="287" height="113.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXM-pf-i4Q" customClass="BaseLabel" customModule="Shopping_List" customModuleProvider="target">
+                        <rect key="frame" x="16" y="46" width="255" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isThemeDark" value="YES"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="HXM-pf-i4Q" firstAttribute="leading" secondItem="gwz-CT-cxq" secondAttribute="leading" constant="16" id="aR7-Sf-0WC"/>
+                    <constraint firstAttribute="trailing" secondItem="HXM-pf-i4Q" secondAttribute="trailing" constant="16" id="hAe-yA-7Ge"/>
+                    <constraint firstItem="HXM-pf-i4Q" firstAttribute="centerY" secondItem="gwz-CT-cxq" secondAttribute="centerY" id="rJj-j4-gvh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="labelName" destination="HXM-pf-i4Q" id="a9N-en-aPV"/>
+            </connections>
+            <point key="canvasLocation" x="-19" y="-26"/>
+        </tableViewCell>
+    </objects>
+</document>

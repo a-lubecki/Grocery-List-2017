@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PendingListTableViewCell" rowHeight="144" id="Ull-iy-EhI" customClass="PendingListTableViewCell" customModule="Shopping_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="144"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ull-iy-EhI" id="Sqg-am-voD">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="143.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JCv-Ga-nS3" customClass="BaseCellBackground" customModule="Shopping_List" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="359" height="127.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="200" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYc-uU-pQo" customClass="BaseLabel" customModule="Shopping_List" customModuleProvider="target">
+                                <rect key="frame" x="8" y="16" width="258" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isThemeDark" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpQ-Xs-l7p" customClass="BaseLabel" customModule="Shopping_List" customModuleProvider="target">
+                                <rect key="frame" x="8" y="95.5" width="33" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isThemeDark" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isTitle" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nouveau !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMw-ij-HRz">
+                                <rect key="frame" x="282" y="44.5" width="61" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="VlR-rY-5Ws"/>
+                                    <constraint firstAttribute="width" constant="80" id="mA1-I0-nmG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fpQ-Xs-l7p" secondAttribute="bottom" constant="16" id="7IW-qc-a6S"/>
+                            <constraint firstItem="IYc-uU-pQo" firstAttribute="top" secondItem="JCv-Ga-nS3" secondAttribute="top" constant="16" id="IO5-bG-iFo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rMw-ij-HRz" secondAttribute="trailing" constant="8" id="M3X-wZ-pSG"/>
+                            <constraint firstItem="IYc-uU-pQo" firstAttribute="leading" secondItem="JCv-Ga-nS3" secondAttribute="leading" constant="8" id="Xfe-NV-Y98"/>
+                            <constraint firstItem="rMw-ij-HRz" firstAttribute="leading" secondItem="IYc-uU-pQo" secondAttribute="trailing" constant="16" id="aE2-42-htT"/>
+                            <constraint firstItem="fpQ-Xs-l7p" firstAttribute="leading" secondItem="JCv-Ga-nS3" secondAttribute="leading" constant="8" id="bF1-RI-GMd"/>
+                            <constraint firstItem="rMw-ij-HRz" firstAttribute="centerY" secondItem="IYc-uU-pQo" secondAttribute="centerY" id="eHI-V4-Yvp"/>
+                            <constraint firstItem="fpQ-Xs-l7p" firstAttribute="top" secondItem="IYc-uU-pQo" secondAttribute="bottom" constant="8" id="i91-cg-sIl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isActive" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="JCv-Ga-nS3" secondAttribute="bottom" priority="750" constant="8" id="Ao9-Zc-Kaq"/>
+                    <constraint firstAttribute="trailing" secondItem="JCv-Ga-nS3" secondAttribute="trailing" constant="8" id="OFs-it-3Es"/>
+                    <constraint firstItem="JCv-Ga-nS3" firstAttribute="leading" secondItem="Sqg-am-voD" secondAttribute="leading" constant="8" id="dwJ-e9-V2R"/>
+                    <constraint firstItem="JCv-Ga-nS3" firstAttribute="top" secondItem="Sqg-am-voD" secondAttribute="top" constant="8" id="gkq-ux-X8B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelNew" destination="rMw-ij-HRz" id="BSb-oY-soi"/>
+                <outlet property="labelSubtitle" destination="fpQ-Xs-l7p" id="A1u-MT-yM9"/>
+                <outlet property="labelTitle" destination="IYc-uU-pQo" id="P8C-ay-WKN"/>
+            </connections>
+            <point key="canvasLocation" x="-65.5" y="-63"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,24 @@
+PODS:
+  - Cartography (3.0.0)
+  - ChameleonFramework/Default (2.1.0)
+  - CRToast (0.0.9)
+  - IQKeyboardManagerSwift (5.0.6)
+  - SwiftSpinner (1.4.1)
+
+DEPENDENCIES:
+  - Cartography (= 3.0.0)
+  - ChameleonFramework/Default (= 2.1.0)
+  - CRToast (= 0.0.9)
+  - IQKeyboardManagerSwift (= 5.0.6)
+  - SwiftSpinner (= 1.4.1)
+
+SPEC CHECKSUMS:
+  Cartography: 105643267226a7ab58895b94b44727eb013e31ce
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  CRToast: 5a78c22b921c5ed3487488af605bc403a9c92fed
+  IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
+  SwiftSpinner: bf7c13332ad008952a09358cadf24a186510ae31
+
+PODFILE CHECKSUM: 95179a18769163d42fac5b31c27d7538a008c81c
+
+COCOAPODS: 1.2.0.beta.3
